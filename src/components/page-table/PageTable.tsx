@@ -11,6 +11,7 @@ import { ProfileEnum, ProfileEnumMapper } from "../../enums/ProfileEnum";
 import { StatusEnum, StatusEnumMapper } from "../../enums/StatusEnum";
 import { alertService } from "../../services/AlertService";
 import { FormUser } from "../form-user/FormUser";
+import { ProdutoService } from "../../services/ProdutoService";
 
 
 export function PageTable(): JSX.Element {
@@ -18,6 +19,8 @@ export function PageTable(): JSX.Element {
 	const [selectedUsers, setSelectedUsers] = useState<User[]>([]);
 	const [selectedUserEdit, setSelectedUserEdit] = useState<User>();
 	const [visibleUserDialog, setVisibleDialog] = useState<boolean>(false);
+
+	const produtoService = new ProdutoService();
 
 	const actionTableTemplate = (user: User) => {
 		return (
@@ -50,6 +53,9 @@ export function PageTable(): JSX.Element {
 
 	useEffect(() => {
 		// TODO add setUsers to updateTable here
+		produtoService.findAll().then((result) => {
+			console.log('result', result);
+		})
 	})
 
 	function openDialogUser(acao: boolean) {
@@ -89,7 +95,7 @@ export function PageTable(): JSX.Element {
 		setUsers([...usersCopy]);
 		alertService.error('Users deleteds');
 	}
-	
+
 	function removeUser(user: User) {
 		const usersCopy = users.filter(u => u.id !== user.id);
 		setUsers([...usersCopy]);
