@@ -6,7 +6,9 @@ import logo from './assets/img/logo.png';
 
 import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
 import "primereact/resources/primereact.min.css";                  //core css
-import "primeicons/primeicons.css";                                //icons
+import "primeicons/primeicons.css";    
+import './assets/Cyrene-Regular.otf';                           //icons
+import './assets/Sora-Regular.ttf';                           //icons
  
 
 function App() {
@@ -23,12 +25,12 @@ function App() {
 								height="30"
 								className="d-inline-block align-top"
 							/>{' '}
-							<strong>React Crud Test</strong>
+							<strong>Treinamento Guarani</strong>
 						</Navbar.Brand>
 					</Container>
 				</Navbar>
 				<div className="box-content">
-					<div className="sidebar">
+					{/* <div className="sidebar">
 						<ul>
 							<li>
 								<a className="menu-link" href="/">Users</a></li>
@@ -37,7 +39,7 @@ function App() {
 							<li>
 								<a className="menu-link" href="/second-page">Page test</a></li>
 						</ul>
-					</div>
+					</div> */}
 					<div className="content">
 						<AppRoutes />
 					</div>

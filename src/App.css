@@ -1,3 +1,18 @@
+/* @import './assets/Cyrene-Regular.otf'; */
+
+@font-face {
+	font-family: 'Cyrene';
+	src: local('Cyrene'), url(./assets/Cyrene-Regular.otf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+@font-face {
+	font-family: 'Sora-Regular';
+	src: local('Sora-Regular'), url(./assets/Sora-Regular.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+
 html, body, #root {
 	margin: auto;
 	height: 100%;

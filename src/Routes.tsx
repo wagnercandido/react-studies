@@ -1,22 +1,18 @@
 import {
-	BrowserRouter as Router,
-	Routes,
-	Route
+	BrowserRouter as Router, Route, Routes
 } from 'react-router-dom';
 import { AlertComponent } from './components/alert-component/AlertComponent';
 
-import { FirstPage } from './components/first-page/FirstPage';
-import { PageTable } from './components/page-table/PageTable';
-import { SecondPage } from './components/second-page/SecondPage';
+import { CadastrarProduto } from './components/form-produto/CadastrarProduto';
+import { Produtos } from './components/produtos/Produtos';
 
 export function AppRoutes() {
 	return (
 		<Router>
 			<AlertComponent />
 			<Routes>
-				<Route path='' element={<PageTable />} />
-				<Route path='/first-page' element={<FirstPage />} />
-				<Route path='/second-page' element={<SecondPage />} />
+				<Route path='' element={<Produtos />} />
+				<Route path='/cadastrar-produto' element={<CadastrarProduto />} />
 			</Routes>
 		</Router>
 	)

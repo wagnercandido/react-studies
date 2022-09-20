@@ -1,0 +1,88 @@
+h6 {
+	font-weight: 700 !important;
+	font-size: 1rem;
+}
+
+.card-produto {
+	border: none;
+    padding: 10px 10px;
+    margin-bottom: 0.7rem;
+    min-height: 140px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+	cursor: pointer;
+}
+
+.nome {
+	color: #3e3e3e;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-top: 0;
+	font-family: 'Sora-Regular';
+}
+
+.linha-secundaria {
+	font-size: .875rem;
+	font-family: 'Sora-Regular';
+}
+
+.preco {
+	font-family: 'Sora-Regular';
+	font-size: 1rem;
+    font-weight: 400;
+	position: absolute;
+    top: 106px;
+	color: #50a773;
+}
+
+.page-link {
+	color: #6c757d !important;
+    border: none !important;
+    border-radius: 50% !important;
+}
+
+.page-item.active .page-link {
+	background: #EEF2FF !important;
+	color: #4338CA;
+}
+
+.linha-produto-carrinho {
+	border-bottom: 1px solid #dcdcdc;
+	padding: 10px 0;
+}
+
+.nome-prod-carrinho {
+	color: #3f3e3e;
+	font-family: 'Sora-Regular';
+}
+
+.valor-prod-carrinho {
+	font-family: 'Sora-Regular';
+	color: #3f3e3e;
+	text-align: right;
+}
+
+.linha-total {
+	padding: 20px 0;
+	font-weight: 700;
+}
+
+.botao-acao {
+	color: red;
+	font-size: .875rem;
+	font-family: 'Sora-Regular';
+	cursor: pointer;
+    margin-right: 1rem;
+}
+
+.botao-acao:hover {
+	opacity: .5;
+}
+
+.preco-visualizacao {
+	font-family: 'Sora-Regular';
+	font-size: 1rem;
+    font-weight: 400;
+    color: #3e3e3e;
+	color: #50a773;
+}
